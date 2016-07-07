@@ -31,3 +31,15 @@ What needs to be done:
 * PDA machine accepts
 * CFG accepts (via Earley Parser)
 * PDA <-> CFG conversion
+
+### Run the PDA tests
+Running the tests in a racket shell will produce cleaner output than using the Makefile or simply executing the file from the command line.
+
+```
+$ cd $PROJECT_DIR && make
+
+OR
+
+$ cd $PROJECT_DIR && racket
+> (require "./cfg-pda/pda.rkt")
+```
