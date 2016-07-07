@@ -10,7 +10,7 @@ The goal of this library is to create a simulation of the following in Racket:
 3) Earley Parser for efficient Context-Free Grammar parsing
 
 ### Why?
-I worte a library that is [a music theory API](https://github.com/benoid/racket-synthesis) to Racket's [Rsound](https://github.com/jbclements/RSound).  As part of that library, I wrote a simple psuedo-random music generator, however, all of the valid chord progressions that it uses must be written out by hand. 
+I wrote a library that is [a music theory API](https://github.com/benoid/racket-synthesis) to Racket's [Rsound](https://github.com/jbclements/RSound).  As part of that library, I wrote a simple psuedo-random music generator, however, all of the valid chord progressions that it uses must be written out by hand. 
 
 This library will ultimately be used with [racket-synthesis](https://github.com/benoid/racket-synthesis) to create a wider variety of harmonic progressions for the generator, using Context-Free Grammars to specify the procedural generation of the harmonic progressions.
 
