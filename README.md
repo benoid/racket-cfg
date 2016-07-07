@@ -22,6 +22,7 @@ The project is currently unfinished.  It is a larger project than I originally a
 
 What is done so far:
 * Structure and organization of PDA data
+* Pattern matching for PDA state data
 * Structure and organization of CFG data
 * Some structure and organization of Earley parser data
 

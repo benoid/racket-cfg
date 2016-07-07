@@ -284,6 +284,9 @@
 
 ;;;;;;;;;;;;;;; Tests ;;;;;;;;;;;;;;;;;
 
+(display "Test make-pda")
+(newline)
+
 (define test-pda (make-pda 
                   (local-def/Q 'q1 'q2 'q3 'q4) 
                   (local-def/sigma 0 1) 
@@ -303,24 +306,31 @@
                   (local-def/accept-states 'q4)
                   (local-def/q0 'q1)
                   '()))
+test-pda
+(newline)
 
+(display "Test rule-list")
+(newline)
 (define rule-list (pda->rule-list test-pda))
-
+rule-list
+(newline)
 
 (define q2-trans-list
   (filter-rule-list-by-current-state
     (pda->rule-list test-pda)
     (second (pda->state-set test-pda))))
 
+(display "Test pda->state table")
+(newline)
 (define table(pda->state-table test-pda))
-
-test-pda
-
-q2-trans-list
-
-(newline)
+table
 (newline)
 
-(match-entry-next-state table 'q1 'q2)
+
+
+(display "Test match-entry-input-symbol")
+(newline)
+(match-entry-input-symbol table 'q2 0)
+(newline)
 
 
